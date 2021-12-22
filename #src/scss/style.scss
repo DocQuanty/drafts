@@ -1,76 +1,68 @@
-
-
 // ========ПЕРЕМЕННЫЕ=====================
 // минимальная ширина
-$minWidth:320px;
+$minWidth: 320px;
 // ширина полотна
-$maxWidth:1152;  
+$maxWidth: 1920px;
 //ширина контейнера
-$maxWidthContainer:856;
+$maxWidthContainer: 856;
 // брейкпоинты на адаптив
 $md1: $maxWidthContainer + 12;
-$md1:991.98;
-$md2:756.98;
-$md3:479.98;
-
+$md1: 991.98;
+$md2: 756.98;
+$md3: 479.98;
 
 // ========ПЕРЕМЕННЫЕ=====================
 
 // ==ОСНОВНАЯ СЕТКА========================================
 
-._container{
-	max-width: $maxWidthContainer + px;
-	margin: 0 auto;
-	// @media (max-width: $md1+px){
-	// 	max-width: 970px;
-	// }
-	@media (max-width: $md1+px){
-		max-width: 750px;
-	}
-	@media (max-width: $md2+px){
-		max-width: none;
-		padding: 0 10px;
-	}
+._container {
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  // @media (max-width: $md1+px){
+  // 	max-width: 970px;
+  // }
+  @media (max-width: $md1+px) {
+    max-width: 750px;
+  }
+  @media (max-width: $md2+px) {
+    max-width: none;
+    padding: 0 10px;
+  }
 }
 
 // ==ОСНОВНАЯ СЕТКА========================================
 @import "mixins";
-@import "fonts"; 
+@import "fonts";
 @import "icons";
 @import "ui";
 @import "form";
 
 // content
 //==================================ОБОЛОЧКА==================================
-.wrapper{
-	width: 100%;
-	min-height: 100%;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	&._loaded{
-		
-	}
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  &._loaded {
+  }
 }
 
 // ======================ОБЩИЕ_ПАРАМЕТРЫ======================
-
-
 
 //================================</OБНУЛЕНИЕ>====================================
 @import "reset";
 //================================</OБНУЛЕНИЕ>====================================
 
 body {
-	color:#21243D;
-	font-size: 14px;
-	font-family: "Heebo";
-	// &._lock{
-	// 	overflow: hidden;
-	// }
+  color: #21243d;
+  font-size: 14px;
+  font-family: "Heebo";
+  // &._lock{
+  // 	overflow: hidden;
+  // }
 }
-
-
 
 //================= ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ=================
 
@@ -81,8 +73,6 @@ body {
 // @import "_blog";
 // @import "_works";
 // @import "_article";
-
-
 
 //=================ОСНОВНОЙ-БЛОК=====================================
 // .page{
