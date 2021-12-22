@@ -1,0 +1,32 @@
+
+
+
+// =======================</FORM>=========================
+// =======================</BUTTONS>=========================
+.btn{
+    height: 47px;
+    padding: 0px 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6464;
+    border-radius: 2px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 29  / 20 * 100%;
+    //lineHeight / fontsize
+    color: #fff;
+    transition: background-color .3s ease 0s;
+    // &:hover{
+    //     background-color: #e04141;
+    // }
+
+    @media (min-width: 992px) {
+        &:hover{
+            background-color: #e04141;
+        }
+    }
+    &._fw{
+        width: 100%;
+    }
+}

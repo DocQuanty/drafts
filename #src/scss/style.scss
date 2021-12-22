@@ -1,0 +1,116 @@
+
+
+// ========ПЕРЕМЕННЫЕ=====================
+// минимальная ширина
+$minWidth:320px;
+// ширина полотна
+$maxWidth:1152;  
+//ширина контейнера
+$maxWidthContainer:856;
+// брейкпоинты на адаптив
+$md1: $maxWidthContainer + 12;
+$md1:991.98;
+$md2:756.98;
+$md3:479.98;
+
+
+// ========ПЕРЕМЕННЫЕ=====================
+
+// ==ОСНОВНАЯ СЕТКА========================================
+
+._container{
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	// @media (max-width: $md1+px){
+	// 	max-width: 970px;
+	// }
+	@media (max-width: $md1+px){
+		max-width: 750px;
+	}
+	@media (max-width: $md2+px){
+		max-width: none;
+		padding: 0 10px;
+	}
+}
+
+// ==ОСНОВНАЯ СЕТКА========================================
+@import "mixins";
+@import "fonts"; 
+@import "icons";
+@import "ui";
+@import "form";
+
+// content
+//==================================ОБОЛОЧКА==================================
+.wrapper{
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	&._loaded{
+		
+	}
+}
+
+// ======================ОБЩИЕ_ПАРАМЕТРЫ======================
+
+
+
+//================================</OБНУЛЕНИЕ>====================================
+@import "reset";
+//================================</OБНУЛЕНИЕ>====================================
+
+body {
+	color:#21243D;
+	font-size: 14px;
+	font-family: "Heebo";
+	// &._lock{
+	// 	overflow: hidden;
+	// }
+}
+
+
+
+//================= ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ=================
+
+@import "_header";
+@import "_footer";
+//================= ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ=================
+
+// @import "_blog";
+// @import "_works";
+// @import "_article";
+
+
+
+//=================ОСНОВНОЙ-БЛОК=====================================
+// .page{
+// 	padding: 90px 0px 0px 0px;
+// 	flex: 1 1 auto;
+// 	// возмож уменш,возмож увелич, базовая ширина!
+// 	@media (max-width: $md3+px){
+// 		padding: 30px 0px 0px 0px;
+
+// 	};
+// }
+
+//FOOTER-COPYRIGHT====================================================================
+
+// .social {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+//     &__item {
+// 		transition: color .3s ease 0s;
+// 		margin: 0 17px;
+// 		font-size: 30px;
+// 		color: inherit;
+// 		transition: color .3s ease 0s;
+// 		@media(min-width:$md2+px){
+// 			&:hover{
+// 				color: #ff6464;
+// 			}
+// 		}
+//     }
+// }
