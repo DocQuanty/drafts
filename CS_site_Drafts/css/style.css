@@ -263,7 +263,8 @@ body {
 
 .header__content {
   max-width: 1518px;
-  padding: 0 6px;
+  padding: 0;
+  padding-top: 13px;
   padding-bottom: 30px;
   border-bottom: 1px solid #f3a917;
   background-color: black;
@@ -281,12 +282,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 210px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__content-icons .icons {
+  margin-left: 40px;
 }
 
 .footer {
@@ -329,5 +333,11 @@ body {
 
   .footer {
     padding: 30px 0;
+  }
+}
+
+@media (max-width: 370px) {
+  .header__content-icons .icons {
+    margin-left: 20px;
   }
 }

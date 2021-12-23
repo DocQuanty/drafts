@@ -1,7 +1,8 @@
 .header {
   &__content {
     max-width: 1518px;
-    padding: 0 6px;
+    padding: 0;
+    padding-top: 13px;
     padding-bottom: 30px;
     border-bottom: 1px solid #f3a917;
     background-color: black;
@@ -12,14 +13,20 @@
   }
   &__content-icons {
     display: flex;
-    max-width: 210px;
     justify-content: space-around;
     align-items: center;
+    .icons {
+      margin-left: 40px;
+      @media (max-width: 370px) {
+        margin-left: 20px;
+      }
+    }
   }
 }
-.icons {
-  //   background-color: red;
-}
+
+// .icons {
+//   background-color: red;
+// }
 
 // &__menu {
 // }
