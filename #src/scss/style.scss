@@ -7,9 +7,9 @@ $maxWidth: 1920px;
 $maxWidthContainer: 856;
 // брейкпоинты на адаптив
 $md1: $maxWidthContainer + 12;
-$md1: 991.98;
-$md2: 756.98;
-$md3: 479.98;
+$md1: 991.98px;
+$md2: 756.98px;
+$md3: 479.98px;
 
 // ========ПЕРЕМЕННЫЕ=====================
 
@@ -21,10 +21,10 @@ $md3: 479.98;
   // @media (max-width: $md1+px){
   // 	max-width: 970px;
   // }
-  @media (max-width: $md1+px) {
+  @media (max-width: $md1) {
     max-width: 750px;
   }
-  @media (max-width: $md2+px) {
+  @media (max-width: $md2) {
     max-width: none;
     padding: 0 10px;
   }
@@ -67,7 +67,9 @@ body {
 //================= ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ=================
 
 @import "_header";
+@import "./titleSlider.scss";
 @import "_footer";
+
 //================= ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ=================
 
 // @import "_blog";
