@@ -1,5 +1,14 @@
 .header {
   margin-left: 200px;
+  @media (max-width: $md1) {
+    margin-left: 90px;
+  }
+  @media (max-width: $md2) {
+    margin-left: 40px;
+  }
+  @media (max-width: $md3) {
+    margin-left: 10px;
+  }
   &__content {
     max-width: 740px;
     max-height: 94px;
@@ -7,7 +16,6 @@
     padding-top: 13px;
     padding-bottom: 30px;
     border-bottom: 1px solid #f3a917;
-    // background-color: black;
     min-height: 100px;
     display: flex;
     justify-content: space-between;
