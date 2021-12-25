@@ -1,0 +1,40 @@
+.main-title {
+  &__logo {
+    max-width: 100%;
+    margin: 161px 0px 35px 0px;
+  }
+
+  &__text-main {
+    max-width: 703px;
+    color: #ffffff;
+  }
+}
+.text-main {
+  &__title {
+    margin: 0px 0px 25px 0px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 73px;
+  }
+
+  &__small-text {
+    margin: 0px 0px 220px 0px;
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #fafafa;
+  }
+
+  &__btn {
+    display: flex;
+  }
+
+  &__btn-left {
+    margin-right: 35px;
+  }
+
+  &__btn-right {
+  }
+}

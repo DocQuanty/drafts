@@ -1,8 +1,9 @@
 .slick-wrapper {
+  height: 0;
 }
 .slick {
   position: relative;
-  top: -126px;
+  top: -130px;
   z-index: -1;
   max-width: 1920px;
   &__item {
